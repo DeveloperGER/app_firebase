@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat con Firebase</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css">
+</head>
+<style >
+	#login {
+		height: 100vh;
+		position: fixed;
+		z-index: 10;
+		width: 100%;
+	}
+
+</style>
+<body>
+	<div id="login" class="white row middle-xs center-xs">
+		<div class="col-xs-12">
+			<div class="box">
+				<p>Antes de entrar al chat, tienes que iniciar sesion</p>
+			<button id="start-login" class="btn btn-raised blue white-text">
+				Iniciar seccion con Google
+			</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
